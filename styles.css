@@ -1,0 +1,22 @@
+.inputContainer{
+    float:left;
+    width:33.33%
+} 
+.mainContainer{
+    float:right;
+    width: 66.67%;
+} 
+.inputContainer ~ label{
+    display: inline;
+    color: red;
+}
+
+.errorNo {
+    display: none;
+}
+
+.error {
+    display: block;
+    color: red;
+    font-size: 12px;
+}

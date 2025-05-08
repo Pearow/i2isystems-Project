@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<html lang="en">
+<head>
+    <title>i3isystems Project</title>
+<link href="styles.css" rel="stylesheet">
+<script src="scripts.js"></script>
+</head>
+<body>
+    <div class="inputContainer">
+            <label for="inputArtist">Artist Name:</label>
+            <input type="text" id="inputArtist" name="inputArtist" placeholder="maNga"><br>
+            <p id="errArtist" class="errorNo">Err</p>
+            <label for="inputSong">Song Name:</label>
+            <input type="text" id="inputSong" name="inputSong" placeholder="Bir kadın çizeceksin"><br>
+            <p id="errSong" class="errorNo">Err</p>
+            <input type="button" value="Get Lyrics" onclick="getLyrics()">
+        <p class="error" id="errMain"></p>
+    </div>
+    <div class="mainContainer">
+        <h3 id="SongTitle"></h3>
+        <p id="lyrics"></p>
+    </div>
+</body>
+</html>
