@@ -1,7 +1,7 @@
 function getLyrics() {
     document.getElementById("errMain").innerHTML = "";
-    let artist = document.getElementById("aname").value;
-    let songName = document.getElementById("sname").value;
+    let artist = document.getElementById("inputArtist").value;
+    let songName = document.getElementById("inputSong").value;
 
     if (artist.trim() === "" || songName.trim() === ""){
         if(artist === "")
@@ -15,7 +15,7 @@ function getLyrics() {
         .then(res => res.json())
         .then(data => {
             if (data.lyrics != null) {
-                document.getElementById("stitle").innerHTML = songName;
+                document.getElementById("SongTitle").innerHTML = songName;
                 document.getElementById("lyrics").innerHTML = data.lyrics;
             }
             else
