@@ -1,13 +1,15 @@
 function getLyrics() {
     document.getElementById("errMain").innerHTML = "";
+    document.getElementById("errSong").classList.replace("error", "errorNo");
+    document.getElementById("errArtist").classList.replace("error", "errorNo");
     let artist = document.getElementById("inputArtist").value;
     let songName = document.getElementById("inputSong").value;
 
     if (artist.trim() === "" || songName.trim() === ""){
         if(artist === "")
-            document.getElementById("errMain").innerHTML = "Artist name can't be blank";
+            document.getElementById("errArtist").classList.replace("errorNo", "error");
         if(songName === "")
-            document.getElementById("errMain").innerHTML = "Song name can't be blank";
+            document.getElementById("errSong").classList.replace("errorNo", "error");
         return;
     }
 

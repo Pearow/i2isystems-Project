@@ -3,17 +3,18 @@
 <html lang="en">
 <head>
     <title>i3isystems Project</title>
-<link href="styles.css" rel="stylesheet">
-<script src="scripts.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="styles.css" rel="stylesheet">
+    <script src="scripts.js"></script>
 </head>
 <body>
     <div class="inputContainer">
             <label for="inputArtist">Artist Name:</label>
             <input type="text" id="inputArtist" name="inputArtist" placeholder="maNga"><br>
-            <p id="errArtist" class="errorNo">Err</p>
+            <p id="errArtist" class="errorNo">Artist name is required.</p>
             <label for="inputSong">Song Name:</label>
             <input type="text" id="inputSong" name="inputSong" placeholder="Bir kadın çizeceksin"><br>
-            <p id="errSong" class="errorNo">Err</p>
+            <p id="errSong" class="errorNo">Song name is required.</p>
             <input type="button" value="Get Lyrics" onclick="getLyrics()">
         <p class="error" id="errMain"></p>
     </div>

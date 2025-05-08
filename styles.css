@@ -6,9 +6,8 @@
     float:right;
     width: 66.67%;
 } 
-.inputContainer ~ label{
-    display: inline;
-    color: red;
+.inputContainer > label{
+
 }
 
 .errorNo {
@@ -19,4 +18,5 @@
     display: block;
     color: red;
     font-size: 12px;
+    margin: 3px 27%;
 }
