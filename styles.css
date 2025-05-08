@@ -1,22 +1,92 @@
-.inputContainer{
-    float:left;
-    width:33.33%
-} 
-.mainContainer{
-    float:right;
-    width: 66.67%;
-} 
-.inputContainer > label{
-
+/* Reset some default styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-image: url('https://chatgpt.com/backend-api/public_content/enc/eyJpZCI6Im1fNjgxZDI5YjA3MWM4ODE5MWJlZDc0M2U2M2JhZTQwNTk6ZmlsZV8wMDAwMDAwMGYxMmM2MjQ2YWRmMTc2NjNlMjNlZjUzZiIsInRzIjoiNDg1MjA2IiwicCI6InB5aSIsInNpZyI6ImMyOGEyNzM4NjMwNGE4YzJlMzg0ZDFmNTc3MjIwMDQwMTcyYTI0ZDVhMmU0NGM2NmI0MzBmNWY2OThmNzc1YmIiLCJ2IjoiMCIsImdpem1vX2lkIjpudWxsfQ==');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #333;
+    display: flex;
+    justify-content: space-between;
+    height: 100vh;
 }
 
+/* Left side: Input container */
+.inputContainer {
+    background-color: rgba(220, 255, 245, 0.85);
+    padding: 20px 25px;
+    margin-top: 50px;
+    height: 250px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    margin-left: 20px;
+}
+
+.inputContainer label {
+    display: block;
+    margin-top: 15px;
+    font-weight: 600;
+}
+
+.inputText {
+    width: 100%;
+    padding: 10px;
+    margin-top: 6px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.inputButton {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #4a90e2;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.inputButton:hover {
+    background-color: #357abd;
+}
+
+/* Error messages */
 .errorNo {
     display: none;
+    color: #d93025;
+    font-size: 13px;
+    margin-top: 4px;
 }
 
 .error {
-    display: block;
-    color: red;
-    font-size: 12px;
-    margin: 3px 27%;
+    color: #d93025;
+    font-weight: 500;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+/* Right side: Lyrics display */
+.mainContainer {
+    background-color: rgba(220, 255, 245, 0.85);
+    padding: 20px 25px;
+    margin-top: 50px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 60%;
+    margin-right: 20px;
+    white-space: preserve-breaks;
+    overflow: auto;
+}
+
+.mainContainer h3 {
+    margin-top: 0;
+    color: #4a4a4a;
+    font-size: 22px;
+    margin-bottom: 15px;
 }
