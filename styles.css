@@ -100,3 +100,17 @@ body {
 .songTitle {
     font-variant-caps: all-small-caps;
 }
+
+@media only screen and (max-width: 600px) {
+    body {
+        flex-direction: column;
+    }
+    .inputContainer {
+        width: 85%;
+        margin: auto auto 10px;
+    }
+    .mainContainer {
+        width: 85%;
+        margin: 10px auto auto;
+    }
+}
