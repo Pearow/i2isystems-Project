@@ -27,6 +27,8 @@ body {
     width: 30%;
     margin-left: 20px;
     margin-right: 5px;
+
+    transition: width 2s;
 }
 
 .inputContainer label {
@@ -90,24 +92,34 @@ body {
     overflow: auto;
 }
 
+.emptyMain {
+    transform: scale(0,0);
+}
+
+.wideInput {
+    width: 100%;
+}
+
 .mainContainer h3 {
     margin-top: 0;
     color: #4a4a4a;
     font-size: 22px;
     margin-bottom: 15px;
+    transition: width 2s, transform 2s;
 }
 
 .songTitle {
     font-variant-caps: all-small-caps;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1000px) {
     body {
         flex-direction: column;
     }
     .inputContainer {
         width: 85%;
         margin: auto auto 10px;
+        transition: none;
     }
     .mainContainer {
         width: 85%;

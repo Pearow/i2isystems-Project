@@ -19,6 +19,8 @@ function getLyrics() {
             if (data.lyrics != null) {
                 document.getElementById("SongTitle").innerHTML = songName;
                 document.getElementById("lyrics").innerHTML = data.lyrics;
+                document.getElementById("inputContainer").classList.remove("wideInput")
+                document.getElementById("mainContainer").classList.remove("emptyMain")
             }
             else
                 document.getElementById("errMain").innerHTML = data.error;

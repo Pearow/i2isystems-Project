@@ -8,7 +8,7 @@
     <script src="scripts.js"></script>
 </head>
 <body>
-    <div class="inputContainer">
+    <div id="inputContainer" class="inputContainer wideInput">
             <label for="inputArtist">Artist Name:</label>
             <input type="text" id="inputArtist" name="inputArtist" placeholder="maNga" class="inputText"><br>
             <p id="errArtist" class="errorNo">Artist name is required.</p>
@@ -18,7 +18,7 @@
             <input type="button" value="Get Lyrics" onclick="getLyrics()" class="inputButton">
         <p class="error" id="errMain"></p>
     </div>
-    <div class="mainContainer">
+    <div id="mainContainer" class="mainContainer emptyMain">
         <h3 class="songTitle" id="SongTitle"></h3>
         <p id="lyrics"></p>
     </div>
